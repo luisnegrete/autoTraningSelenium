@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="browser" value="firefox"/>
+  <test thread-count="5" name="TestStartbucks(failed)">
+    <classes>
+      <class name="com.globant.autoTrainingSelenium.test.starbucks.StarbucksTest">
+        <methods>
+          <include name="beforeSuit"/>
+          <include name="afterSuite"/>
+          <include name="restartTest"/>
+          <include name="test3" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.globant.autoTrainingSelenium.test.starbucks.StarbucksTest -->
+    </classes>
+  </test> <!-- TestStartbucks(failed) -->
+</suite> <!-- Failed suite [Suite] -->

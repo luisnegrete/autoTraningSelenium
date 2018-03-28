@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="2" total="5" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="106543" started-at="2018-04-02T04:50:59Z" finished-at="2018-04-02T04:52:45Z">
+    <groups>
+    </groups>
+    <test name="TestStartbucks" duration-ms="106543" started-at="2018-04-02T04:50:59Z" finished-at="2018-04-02T04:52:45Z">
+      <class name="com.globant.autoTrainingSelenium.test.starbucks.StarbucksTest">
+        <test-method status="PASS" signature="beforeSuit(java.lang.String)[pri:0, instance:com.globant.autoTrainingSelenium.test.starbucks.StarbucksTest@6a4f787b]" name="beforeSuit" is-config="true" duration-ms="50956" started-at="2018-04-02T04:50:08Z" finished-at="2018-04-02T04:50:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuit -->
+        <test-method status="PASS" signature="test3(java.lang.String, int, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.globant.autoTrainingSelenium.test.starbucks.StarbucksTest@6a4f787b]" name="test3" duration-ms="52308" started-at="2018-04-02T04:50:59Z" data-provider="providerTest3" finished-at="2018-04-02T04:51:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Spring]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[JL]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Spring Message]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[50]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[JL]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[recipientSpring@email.com]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[senderSpring@email.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method status="PASS" signature="test3(java.lang.String, int, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.globant.autoTrainingSelenium.test.starbucks.StarbucksTest@6a4f787b]" name="test3" duration-ms="26480" started-at="2018-04-02T04:51:51Z" data-provider="providerTest3" finished-at="2018-04-02T04:52:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Birthday]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[JL]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Birthday Message]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[50]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[JL]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[recipientBirthday@email.com]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[senderBirthday@email.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method status="PASS" signature="test3(java.lang.String, int, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.globant.autoTrainingSelenium.test.starbucks.StarbucksTest@6a4f787b]" name="test3" duration-ms="27522" started-at="2018-04-02T04:52:18Z" data-provider="providerTest3" finished-at="2018-04-02T04:52:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Friendship]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[JL]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Friendship Message]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[50]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[JL]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[recipientFriendship@email.com]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[senderFriendship@email.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method status="PASS" signature="restartTest()[pri:0, instance:com.globant.autoTrainingSelenium.test.starbucks.StarbucksTest@6a4f787b]" name="restartTest" is-config="true" duration-ms="1" started-at="2018-04-02T04:52:45Z" finished-at="2018-04-02T04:52:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- restartTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.globant.autoTrainingSelenium.test.starbucks.StarbucksTest@6a4f787b]" name="afterSuite" is-config="true" duration-ms="5456" started-at="2018-04-02T04:52:47Z" finished-at="2018-04-02T04:52:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.globant.autoTrainingSelenium.test.starbucks.StarbucksTest -->
+    </test> <!-- TestStartbucks -->
+  </suite> <!-- Suite -->
+</testng-results>
