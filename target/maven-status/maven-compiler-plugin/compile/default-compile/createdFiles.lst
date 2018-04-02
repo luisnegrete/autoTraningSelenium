@@ -1,0 +1,9 @@
+com\globant\autoTrainingSelenium\pages\starbucks\AddGiftCardPage.class
+com\globant\autoTrainingSelenium\pages\wikipedia\WikiArticlePage.class
+com\globant\autoTrainingSelenium\pages\starbucks\EGiftCardPage.class
+com\globant\autoTrainingSelenium\MyDriver.class
+com\globant\autoTrainingSelenium\pages\BasePage.class
+com\globant\autoTrainingSelenium\pages\wikipedia\WikiHomePage.class
+com\globant\autoTrainingSelenium\pages\starbucks\CartPage.class
+com\globant\autoTrainingSelenium\pages\starbucks\FindYourCoffeePage.class
+com\globant\autoTrainingSelenium\pages\starbucks\StarbucksHomePage.class

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="2" total="5" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="106543" started-at="2018-04-02T04:50:59Z" finished-at="2018-04-02T04:52:45Z">
+  <suite name="Suite" duration-ms="79418" started-at="2018-04-02T17:45:33Z" finished-at="2018-04-02T17:46:52Z">
     <groups>
     </groups>
-    <test name="TestStartbucks" duration-ms="106543" started-at="2018-04-02T04:50:59Z" finished-at="2018-04-02T04:52:45Z">
+    <test name="TestStartbucks" duration-ms="79418" started-at="2018-04-02T17:45:33Z" finished-at="2018-04-02T17:46:52Z">
       <class name="com.globant.autoTrainingSelenium.test.starbucks.StarbucksTest">
-        <test-method status="PASS" signature="beforeSuit(java.lang.String)[pri:0, instance:com.globant.autoTrainingSelenium.test.starbucks.StarbucksTest@6a4f787b]" name="beforeSuit" is-config="true" duration-ms="50956" started-at="2018-04-02T04:50:08Z" finished-at="2018-04-02T04:50:59Z">
+        <test-method status="PASS" signature="beforeSuit(java.lang.String)[pri:0, instance:com.globant.autoTrainingSelenium.test.starbucks.StarbucksTest@3532ec19]" name="beforeSuit" is-config="true" duration-ms="2835" started-at="2018-04-02T17:45:30Z" finished-at="2018-04-02T17:45:33Z">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,135 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuit -->
-        <test-method status="PASS" signature="test3(java.lang.String, int, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.globant.autoTrainingSelenium.test.starbucks.StarbucksTest@6a4f787b]" name="test3" duration-ms="52308" started-at="2018-04-02T04:50:59Z" data-provider="providerTest3" finished-at="2018-04-02T04:51:51Z">
+        <test-method status="PASS" signature="test1()[pri:0, instance:com.globant.autoTrainingSelenium.test.starbucks.StarbucksTest@3532ec19]" name="test1" duration-ms="9045" started-at="2018-04-02T17:45:33Z" finished-at="2018-04-02T17:45:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test2(java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.String)[pri:0, instance:com.globant.autoTrainingSelenium.test.starbucks.StarbucksTest@3532ec19]" name="test2" duration-ms="12363" started-at="2018-04-02T17:45:42Z" data-provider="providerTest2" finished-at="2018-04-02T17:45:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[EARTHY & HERBAL]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="test2(java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.String)[pri:0, instance:com.globant.autoTrainingSelenium.test.starbucks.StarbucksTest@3532ec19]" name="test2" duration-ms="5803" started-at="2018-04-02T17:45:54Z" data-provider="providerTest2" finished-at="2018-04-02T17:46:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[MELLOW & SOFT]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="test2(java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.String)[pri:0, instance:com.globant.autoTrainingSelenium.test.starbucks.StarbucksTest@3532ec19]" name="test2" duration-ms="5676" started-at="2018-04-02T17:46:00Z" data-provider="providerTest2" finished-at="2018-04-02T17:46:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[SMOOTH & BALANCED]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="test2(java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.String)[pri:0, instance:com.globant.autoTrainingSelenium.test.starbucks.StarbucksTest@3532ec19]" name="test2" duration-ms="5363" started-at="2018-04-02T17:46:06Z" data-provider="providerTest2" finished-at="2018-04-02T17:46:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[MELLOW & SOFT]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="test3(java.lang.String, int, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.globant.autoTrainingSelenium.test.starbucks.StarbucksTest@3532ec19]" name="test3" duration-ms="14806" started-at="2018-04-02T17:46:11Z" data-provider="providerTest3" finished-at="2018-04-02T17:46:26Z">
           <params>
             <param index="0">
               <value>
@@ -64,7 +192,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test3 -->
-        <test-method status="PASS" signature="test3(java.lang.String, int, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.globant.autoTrainingSelenium.test.starbucks.StarbucksTest@6a4f787b]" name="test3" duration-ms="26480" started-at="2018-04-02T04:51:51Z" data-provider="providerTest3" finished-at="2018-04-02T04:52:18Z">
+        <test-method status="PASS" signature="test3(java.lang.String, int, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.globant.autoTrainingSelenium.test.starbucks.StarbucksTest@3532ec19]" name="test3" duration-ms="16772" started-at="2018-04-02T17:46:26Z" data-provider="providerTest3" finished-at="2018-04-02T17:46:43Z">
           <params>
             <param index="0">
               <value>
@@ -110,7 +238,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test3 -->
-        <test-method status="PASS" signature="test3(java.lang.String, int, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.globant.autoTrainingSelenium.test.starbucks.StarbucksTest@6a4f787b]" name="test3" duration-ms="27522" started-at="2018-04-02T04:52:18Z" data-provider="providerTest3" finished-at="2018-04-02T04:52:45Z">
+        <test-method status="PASS" signature="test3(java.lang.String, int, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.globant.autoTrainingSelenium.test.starbucks.StarbucksTest@3532ec19]" name="test3" duration-ms="9550" started-at="2018-04-02T17:46:43Z" data-provider="providerTest3" finished-at="2018-04-02T17:46:52Z">
           <params>
             <param index="0">
               <value>
@@ -156,11 +284,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test3 -->
-        <test-method status="PASS" signature="restartTest()[pri:0, instance:com.globant.autoTrainingSelenium.test.starbucks.StarbucksTest@6a4f787b]" name="restartTest" is-config="true" duration-ms="1" started-at="2018-04-02T04:52:45Z" finished-at="2018-04-02T04:52:45Z">
+        <test-method status="PASS" signature="restartTest()[pri:0, instance:com.globant.autoTrainingSelenium.test.starbucks.StarbucksTest@3532ec19]" name="restartTest" is-config="true" duration-ms="0" started-at="2018-04-02T17:46:52Z" finished-at="2018-04-02T17:46:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- restartTest -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.globant.autoTrainingSelenium.test.starbucks.StarbucksTest@6a4f787b]" name="afterSuite" is-config="true" duration-ms="5456" started-at="2018-04-02T04:52:47Z" finished-at="2018-04-02T04:52:52Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.globant.autoTrainingSelenium.test.starbucks.StarbucksTest@3532ec19]" name="afterSuite" is-config="true" duration-ms="255" started-at="2018-04-02T17:46:52Z" finished-at="2018-04-02T17:46:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->

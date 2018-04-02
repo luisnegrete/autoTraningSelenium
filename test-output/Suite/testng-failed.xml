@@ -8,8 +8,8 @@
         <methods>
           <include name="beforeSuit"/>
           <include name="afterSuite"/>
+          <include name="test2" invocation-numbers="0 1 2 3"/>
           <include name="restartTest"/>
-          <include name="test3" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.globant.autoTrainingSelenium.test.starbucks.StarbucksTest -->
     </classes>

@@ -18,7 +18,7 @@ import com.globant.autoTrainingSelenium.pages.BasePage;
  *
  */
 public class FindYourCoffeePage extends BasePage {
-	private By byH3 = By.tagName("h3");
+	private By byH5 = By.tagName("h5");
 	private By byButton = By.tagName("button");
 	private By byArticle = By.tagName("article");
 	
@@ -62,7 +62,7 @@ public class FindYourCoffeePage extends BasePage {
 		WebElement selectedArticle = validateSelectedArticle();
 		
 		
-		return selectedArticle.findElement(byH3).getText();
+		return selectedArticle.findElement(byH5).getText();
 	}
 
 	/**
@@ -88,14 +88,14 @@ public class FindYourCoffeePage extends BasePage {
 	}
 	
 	/**
-	 * Método que valida qué artículo es el que resultó
+	 * Mï¿½todo que valida quï¿½ artï¿½culo es el que resultï¿½
 	 * @return
 	 */
 	private WebElement validateSelectedArticle() {
 		WebElement selectedArticle = null;
 		
 		
-		// Obteniendo todos los artículos dispobibles
+		// Obteniendo todos los artï¿½culos dispobibles
 		getWait().until(ExpectedConditions.elementToBeClickable(coffeesStack));
 		List<WebElement> lstArticles = coffeesStack.findElements(byArticle);
 		for (WebElement webElement : lstArticles) {

@@ -36,10 +36,10 @@ public class StarbucksTest extends BaseTNGTest {
 	@DataProvider(name="providerTest2")
 	public Object[][] createData1() {
 		return new Object[][] { 
-				{ new Integer(2), new Integer(1), new Integer(2), new Integer(1),"Sumatra" },
-				{ new Integer(0), new Integer(0), new Integer(0), new Integer(0),"Veranda Blend®" },
-				{ new Integer(1), new Integer(2), new Integer(0), new Integer(1),"Pike Place® Roast" },
-				{ new Integer(0), new Integer(1), new Integer(1), new Integer(0),"Veranda Blend®" }, 
+				{ new Integer(2), new Integer(1), new Integer(2), new Integer(1),"EARTHY & HERBAL" },
+				{ new Integer(0), new Integer(0), new Integer(0), new Integer(0),"MELLOW & SOFT" },
+				{ new Integer(1), new Integer(2), new Integer(0), new Integer(1),"SMOOTH & BALANCED" },
+				{ new Integer(0), new Integer(1), new Integer(1), new Integer(0),"MELLOW & SOFT" }, 
 			};
 	}
 
@@ -47,10 +47,10 @@ public class StarbucksTest extends BaseTNGTest {
 	@Test(dataProvider = "providerTest2")
 	public void test2(Integer q1, Integer q2, Integer q3, Integer q4, String resultado) {
 		starbucksHomePage = new StarbucksHomePage(myDriver.getDriver());
-		// Obteniendo la página de 'Find your perfect Coffee
+		// Obteniendo la pï¿½gina de 'Find your perfect Coffee
 		FindYourCoffeePage findYourCoffeePage = starbucksHomePage.getFindYourCoffeePage();
 		
-		// Verificando que el resultado dependiendo de los parámetros.
+		// Verificando que el resultado dependiendo de los parï¿½metros.
 		Assert.assertEquals(findYourCoffeePage.getFindYourPerfectCoffee(q1,q2,q3,q4), resultado);
 	}
 	
@@ -74,8 +74,9 @@ public class StarbucksTest extends BaseTNGTest {
 		CartPage cartPage = starbucksHomePage.getGiveGiftCardByEmailPage().addGiftCardPage(categorie).addToCart(
 				carruselItem, recipientNameValue, messageValue, amountValue, senderNameValue, recipientEmailValue,
 				senderEmailValue);
-
-		// Verificando que el resultado dependiendo de los parámetros.
+		
+		Assert.assertTrue(cartPage.isCardAdded(recipientNameValue, messageValue, amountValue, recipientEmailValue));
+		// Verificando que el resultado dependiendo de los parï¿½metros.
 		Assert.assertEquals(cartPage.getTitle(), "Shopping Cart");
 	}
 	
