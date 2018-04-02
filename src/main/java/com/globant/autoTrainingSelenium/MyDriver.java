@@ -19,14 +19,14 @@ public class MyDriver {
 	 * Constructor que genera la instancia del WebDriver dependiendo del navegador solicitado
 	 * @param browser
 	 */
-	public MyDriver(String browser) {
+	public MyDriver(String browser, String urlDriver) {
 		switch (browser) {
 		case "firefox":
-			System.setProperty("webdriver.gecko.driver", "C:\\Users\\jose.negrete\\driversTesting\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", urlDriver);
 			driver = new FirefoxDriver();
 			break;
 		case "chrome":
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\jose.negrete\\driversTesting\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", urlDriver);
 			driver = new ChromeDriver();
 			break;
 		default:

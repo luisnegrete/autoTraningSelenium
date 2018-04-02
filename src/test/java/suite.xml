@@ -2,6 +2,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Suite" parallel="false">
 	<parameter name="browser" value="firefox" />
+	<parameter name="urlDriver" value="src/test/resources/driversTesting/geckodriver.exe" />
+
 	<!--parameter name="browser" value="chrome"/ -->
 	<test name="TestStartbucks">
 		<classes>

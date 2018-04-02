@@ -58,16 +58,16 @@ public class StarbucksTest extends BaseTNGTest {
 	@DataProvider(name="providerTest3")
 	public Object[][] createData2() {
 		return new Object[][] { 
-				{ "Spring", 0,"JL", "Spring Message",50,"JL", "recipientSpring@email.com","senderSpring@email.com"},
-				{ "Birthday", 0,"JL", "Birthday Message",50,"JL", "recipientBirthday@email.com","senderBirthday@email.com"},
-				{ "Friendship", 0,"JL", "Friendship Message",50,"JL", "recipientFriendship@email.com","senderFriendship@email.com"},
+				{ "Spring", 0,"JL", "Spring Message",50,"JL", "recipientSpring@email.com","senderSpring@email.com", "Spring Flowers"},
+				{ "Birthday", 1,"JL", "Birthday Message",100,"JL", "recipientBirthday@email.com","senderBirthday@email.com","HBD"},
+				{ "Friendship", 3,"JL", "Friendship Message",10,"JL", "recipientFriendship@email.com","senderFriendship@email.com","Thinking of You"},
 			};
 	}
 	
 	
 	@Test(dataProvider = "providerTest3")
 	public void test3(String categorie,int carruselItem, String recipientNameValue, String messageValue, int amountValue,
-			String senderNameValue, String recipientEmailValue, String senderEmailValue) {
+			String senderNameValue, String recipientEmailValue, String senderEmailValue, String selectedCard) {
 		starbucksHomePage = new StarbucksHomePage(myDriver.getDriver());
 
 		// Obteniendo el carrito de compra una vez agregada un Card
@@ -77,7 +77,7 @@ public class StarbucksTest extends BaseTNGTest {
 		
 		Assert.assertTrue(cartPage.isCardAdded(recipientNameValue, messageValue, amountValue, recipientEmailValue));
 		// Verificando que el resultado dependiendo de los par�metros.
-		Assert.assertEquals(cartPage.getTitle(), "Shopping Cart");
+		Assert.assertTrue(cartPage.isCardInSummary(selectedCard, amountValue));
 	}
 	
 	

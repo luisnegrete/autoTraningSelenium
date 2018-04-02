@@ -23,6 +23,7 @@ public class CartPage extends BasePage {
 	private By byTbody 	= By.tagName("tbody");
 	private By byTd 	= By.tagName("td");
 	private By byTh 	= By.tagName("th");
+	private By byTr 	= By.tagName("tr");
 	
 	@FindBy(xpath="//*[@id=\"content\"]/div[1]/h1")
 	private WebElement pageTitle;
@@ -104,17 +105,34 @@ public class CartPage extends BasePage {
 	/**
 	 * Método que valida si una tarjeta se encuentra agregada al sumario del carrito de compra
 	 * @param selectedCard
+	 * @param amountValue
 	 * @return
 	 */
-	public boolean isCardInSummary(String selectedCard) {
+	public boolean isCardInSummary(String selectedCard, int amountValue) {
 		boolean answer = false;
 		
 		// Obteniendo las tablas de los elementos del sumario
 		getWait().until(ExpectedConditions.visibilityOf(cartSummary));
-		List<WebElement> lstSummaryItems = cartSummary.findElement(byTbody).findElements(byTh);
+		List<WebElement> lstSummaryItems = cartSummary.findElement(byTbody).findElements(byTr);
 		
 		for (WebElement item : lstSummaryItems) {
-			if(("1 " + selectedCard).equals(item.getText())) {
+			Integer amount = null;
+			String cardName = null;
+			
+			// Validando el nombre de la tarjeta seleccionada
+			cardName = item.findElement(byTh).getText();
+			
+			// Validando el precio
+			NumberFormat format = NumberFormat.getCurrencyInstance();
+			try {
+				amount = format.parse(item.findElement(byTd).getText()).intValue();
+			} catch (ParseException e) {
+				e.printStackTrace();
+				amount = 0;
+			}
+			
+			if(("1 " + selectedCard).equals(cardName) &&
+				amount.equals(amountValue)) {
 				answer = true;
 				break;
 			}

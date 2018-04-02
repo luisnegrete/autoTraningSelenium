@@ -19,9 +19,9 @@ public class BaseTNGTest {
 	protected BasePage basePage;
 	
 	@BeforeSuite(alwaysRun=true)
-	@Parameters({"browser"})
-	public void beforeSuit(String browser) throws Exception {
-		myDriver = new MyDriver(browser);
+	@Parameters({"browser", "urlDriver"})
+	public void beforeSuit(String browser, String urlDriver) throws Exception {
+		myDriver = new MyDriver(browser, urlDriver);
 	}
 	
 	@AfterSuite(alwaysRun=true)
