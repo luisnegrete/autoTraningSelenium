@@ -24,7 +24,7 @@ public class BaseTNGTest {
 		myDriver = new MyDriver(browser, urlDriver);
 	}
 	
-	@AfterSuite(alwaysRun=true)
+	//@AfterSuite(alwaysRun=true)
 	public void afterSuite() {
 		basePage.dispose();
 	}

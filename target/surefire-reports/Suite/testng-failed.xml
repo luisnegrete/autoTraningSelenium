@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <parameter name="browser" value="remote"/>
+  <parameter name="urlDriver" value="src/test/resources/driversTesting/geckodriver.exe"/>
+  <test thread-count="5" verbose="0" name="TestStartbucks(failed)">
+    <classes>
+      <class name="com.globant.autoTrainingSelenium.test.starbucks.StarbucksTest">
+        <methods>
+          <include name="beforeSuit"/>
+          <include name="test1"/>
+          <include name="test2"/>
+          <include name="restartTest"/>
+          <include name="test3"/>
+        </methods>
+      </class> <!-- com.globant.autoTrainingSelenium.test.starbucks.StarbucksTest -->
+    </classes>
+  </test> <!-- TestStartbucks(failed) -->
+</suite> <!-- Failed suite [Suite] -->
