@@ -6,6 +6,9 @@ package com.globant.autoTrainingSelenium;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 /**
  * @author jose.negrete
@@ -23,7 +26,15 @@ public class MyDriver {
 		switch (browser) {
 		case "firefox":
 			System.setProperty("webdriver.gecko.driver", urlDriver);
-			driver = new FirefoxDriver();
+			
+			FirefoxOptions firefoxOptions = new FirefoxOptions(DesiredCapabilities.firefox());
+	        firefoxOptions.addPreference("browser.popups.showPopupBlocker", false);
+	        firefoxOptions.addPreference("security.sandbox.content.level", 5);
+	        firefoxOptions.setAcceptInsecureCerts(true);
+	        firefoxOptions.setProfile(new FirefoxProfile());
+
+	        driver = new FirefoxDriver(firefoxOptions);
+			
 			break;
 		case "chrome":
 			System.setProperty("webdriver.chrome.driver", urlDriver);

@@ -8,6 +8,7 @@
       <class name="com.globant.autoTrainingSelenium.test.starbucks.StarbucksTest">
         <methods>
           <include name="beforeSuit"/>
+          <include name="afterSuite"/>
           <include name="test1"/>
           <include name="test2"/>
           <include name="restartTest"/>
