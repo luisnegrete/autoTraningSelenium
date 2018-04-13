@@ -1,0 +1,6 @@
+projectKey=autoTrainning_Selenium:project
+serverUrl=http://127.0.0.1:9000
+serverVersion=7.0.0.36138
+dashboardUrl=http://127.0.0.1:9000/dashboard/index/autoTrainning_Selenium:project
+ceTaskId=AWLAGerN1xaco5A-FVoO
+ceTaskUrl=http://127.0.0.1:9000/api/ce/task?id=AWLAGerN1xaco5A-FVoO
